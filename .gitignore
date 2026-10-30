@@ -1,0 +1,33 @@
+@'
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+target/
+bin/
+
+# Environment files and credentials
+.env
+.env.*
+!.env.example
+
+# Java compiled files
+*.class
+*.war
+
+# IDE files
+.idea/
+.vscode/
+.settings/
+.classpath
+.project
+
+# Operating system files
+.DS_Store
+Thumbs.db
+'@ | Set-Content .gitignore
+
+# Backend database credentials
+backend/src/main/resources/db.properties
